@@ -1,0 +1,24 @@
+/* --- Nav Styles ---- */
+.placeholderLogo {
+	display:inline-block;
+	padding:2rem;
+	background-color:grey;
+}
+
+/* --- Main Styles ---- */
+
+.jumbotron {
+	
+	margin:2rem auto 1rem;
+	background-color:#fcfcfc;
+}
+
+/* --- Body Styles ---- */
+
+
+
+/* --- Footer Styles ---- */
+
+body {
+	background-color: #212529;
+}
