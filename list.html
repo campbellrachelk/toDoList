@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Rachel Campbell">
+    <meta name="keywords" content="">
+
+    <!-- Bootstrap CSS and JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- End Bootstrap -->
+
+    <!-- My External Files -->
+    <link rel="stylesheet" type="text/css" href="list.css"/>
+    <!-- End My Files -->
+
+    <title>To Do List</title>
+
+</head>
+
+<body>
+  <div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">To Do List</h1>
+    <p class="lead"><em>{Select the day of the week to see your 'to-do' list for today. Click each item upon completion to cross it off.}</em></p>
+  </div><!-- .jumbotron end -->
+  <form>
+    <label for="day">Today is:</label>
+    <select class="form-control daySelect" id="day" >
+      <option value="" disabled selected hidden>Choose a Day</option>
+      <option value="1">Monday</option>
+      <option value="2">Tuesday</option>
+      <option value="3">Wednesday</option>
+      <option value="4">Thursday</option>
+      <option value="5">Friday</option>
+      <option value="6">Saturday</option>
+      <option value="7">Sunday</option>
+    </select>
+    <button type="button" onclick="listFunction()" class="btn btn-info mt-3">Submit</button>
+  </form>
+
+<div class="card" style="max-width:550px; padding:2rem; margin:2rem;">
+  <div class="toDoList cardBody">
+    <h2>What is on our schedule today?</h2>
+
+  </div><!-- close .toDoList -->
+</div><!-- close .card-->
+
+</div><!-- close .container -->
+</body>
+
+<!-- My External Files -->
+<script type="text/javascript" src="list.js"></script>
+<!-- End My Files -->
+
+
+</html>
