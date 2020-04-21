@@ -51,10 +51,11 @@ function listFunction() {
 
 // grabs all <li> items on the page
 	let listItems = document.getElementsByTagName('li');
+	let listItem;
 
 // adds a 'click' event listener to each <li> item and tells the computer to run the crossOff() function on click
 	for (let i = 0; i < listItems.length; i++) {
-		let listItem = listItems[i];
+		listItem = listItems[i];
 		console.log(listItem);
 		listItem.addEventListener("click", crossOff)
 }
