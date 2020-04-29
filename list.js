@@ -46,7 +46,7 @@ function listFunction() {
 // This function strikes through 'done' items in the to-do list when the user clicks it
 	function crossOff() {
 	console.log('this is working');
-	listItem.style.textDecoration = "line-through";
+	this.style.textDecoration = "line-through";
 	}
 
 // grabs all <li> items on the page
