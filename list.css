@@ -3,3 +3,18 @@
 	color:white;
 	margin: 1rem 0;
 }
+
+.toDoList input {
+	width:60%;
+	margin:1rem;
+} 
+
+.card {
+	max-width:850px; 
+	padding:2rem; 
+	margin:2rem;"
+}
+
+ol {
+	margin:1rem;
+}

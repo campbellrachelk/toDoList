@@ -26,26 +26,20 @@
   <div class="container">
   <div class="jumbotron">
     <h1 class="display-4">To Do List</h1>
-    <p class="lead"><em>{Select the day of the week to see your 'to-do' list for today. Click each item upon completion to cross it off.}</em></p>
+    <p class="lead"><em>(Add tasks to your list. When they're complete, 'click' each one to cross it off.)</em></p>
   </div><!-- .jumbotron end -->
-  <form>
-    <label for="day">Today is:</label>
-    <select class="form-control daySelect" id="day" >
-      <option value="" disabled selected hidden>Choose a Day</option>
-      <option value="1">Monday</option>
-      <option value="2">Tuesday</option>
-      <option value="3">Wednesday</option>
-      <option value="4">Thursday</option>
-      <option value="5">Friday</option>
-      <option value="6">Saturday</option>
-      <option value="7">Sunday</option>
-    </select>
-    <button type="button" onclick="listFunction()" class="btn btn-info mt-3">Submit</button>
-  </form>
+  
 
-<div class="card" style="max-width:550px; padding:2rem; margin:2rem;">
+<div class="card">
   <div class="toDoList cardBody">
-    <h2>What is on our schedule today?</h2>
+    <h2 class="todayIs"></h2>
+
+      <ol id="toDoList">
+ 
+      </ol>
+
+      <input for="task" type="text" id="taskInput" placeholder="What do you need to do today?">
+      <button type="submit" for="task" method="GET" onclick="listFunction()" class="btn btn-secondary">Submit</button>
 
   </div><!-- close .toDoList -->
 </div><!-- close .card-->
